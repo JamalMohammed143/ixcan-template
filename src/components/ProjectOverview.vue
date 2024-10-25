@@ -1,15 +1,23 @@
+<script setup>
+defineProps({
+  title: String,
+  content: String,
+  image: String
+})
+</script>
+
+
 <template>
   <section class="project-overview">
     <div class="content-wrapper">
       <div class="text-content">
-        <h2>Empowering geriatric Oncologists to streamline assessments, reduce manual effort, and enhance geriatric patient care</h2>
         <div class="overview">
-          <h3>Project Overview</h3>
-          <p>We launched CareAlign, a cutting-edge digital assessment assistant designed to streamline the submission process and enhance data accuracy for healthcare providers and elderly patients. This application simplifies interactions and improves user experience within the healthcare system.</p>
+          <h3>{{ title }}</h3>
+          <p>{{ content }}</p>
         </div>
       </div>
       <div class="image-content">
-        <img src="path-to-your-image.jpg" alt="Healthcare professional using CareAlign app">
+        <img :src="image" :alt="title">
       </div>
     </div>
   </section>
@@ -30,24 +38,15 @@
   align-items: center;
 }
 
-.text-content h2 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-  color: #2c3e50;
-  font-weight: bold;
-}
-
 .overview h3 {
-  font-size: 1.5rem;
-  color: #42b883;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: #2c3e50;
 }
 
 .overview p {
-  font-size: 1.1rem;
+  color: #2c3e50;
   line-height: 1.6;
-  color: #666;
 }
 
 .image-content img {
@@ -59,10 +58,6 @@
 @media (max-width: 768px) {
   .content-wrapper {
     grid-template-columns: 1fr;
-  }
-
-  .text-content h2 {
-    font-size: 2rem;
   }
 }
 </style>

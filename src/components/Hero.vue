@@ -5,7 +5,7 @@
       <h1>Simplifying Healthcare Assessments with Digital Efficiency</h1>
     </div>
     <div class="hero-image">
-      <img src="https://i.imgur.com/YourImageURL.jpg" alt="Healthcare Assessment Interface">
+      <img src="/images/Banner-IXCAN.webp" alt="Healthcare Assessment Interface">
     </div>
   </section>
 </template>
