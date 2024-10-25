@@ -35,9 +35,9 @@ const section2Data = {
         <h2>CareAlign has significantly improved the operational efficiency of geriatric oncologists by reducing paperwork and enhancing data accuracy, leading to better patient care.</h2>
       </div>
       <ProjectOverview
-        :title="section1Data.title"
-        :content="section1Data.content"
-        :image="section1Data.image"
+        :title="section2Data.title"
+        :content="section2Data.content"
+        :image="section2Data.image"
          />
       <TechStack />
     </main>
